@@ -1,0 +1,765 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vbjo {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nun {
+    font-family: 'Nunito', sans-serif;
+}
+
+.poi {
+    font-family: 'Poiret One', cursive;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.opens {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.robo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ubun {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Ubuntu", sans-serif;
+    color: #3e3947;
+    background-color: white;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.centrar {
+    width: 50%;
+    margin: 0 auto;
+}
+
+a {
+    color: #3e3947;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-imagen {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.social{
+    z-index: 10;
+    width: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+.ico{
+    width: 16px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+.introinf {
+    padding-left: 1em;
+    padding-top: 8em;
+}
+.skills {
+
+}
+.skill {
+    margin: 2em 0.5em;
+    height: 100px;
+    width:  100px;
+    border-radius: 10%;
+}
+
+.negro {
+    color: black!important;
+}
+
+
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+.scroll-btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+.scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: #ffffff;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+    color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 1.5s linear infinite;
+    -moz-animation: ani-mouse 1.5s linear infinite;
+    animation: ani-mouse 1.5s linear infinite;
+}
+
+
+
+
+
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-img-replace {
+    /* replace text with a background-image */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+
+
+
+.headermessage {
+    margin: 19px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.image-block {
+    background-color: black;
+    padding: 0px;    
+    margin: 0px;
+    height:200px;
+    text-align: center;
+    vertical-align: bottom;
+}
+.image-block > p {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3,3,3,0.0)!important;
+    color: rgba(6,6,6,0.0)!important;
+}
+.image-block:hover > p {
+    background-color: rgba(3,3,3,0.5)!important;    
+    color: white!important;    
+}
+
+
+
+
+/*///////////////////////////////proyectos*/
+
+.imagen {
+    background: url(../img/fondointro.jpg) center center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+.imagen1 {
+    background: url(../img/imgproyecto/retame/proyecto%20reta%20me-08.png) center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;   
+}
+
+.cardretame {
+    background-color: #4a91c2;
+    color: white;
+}
+.imagen2 {
+    background: url(../img/imgproyecto/banner/bannerban-02.png) center center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+.imagen3 {
+    background: url(../img/imgproyecto/evoca/evoca%20banner-06.png) center center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+.imagen4 {
+    background: url(../img/imgproyecto/ryt/banner.PNG) center center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+.imagen5 {
+    background: url(../img/imgproyecto/tikiku/proyecto%20tiki%20ku-11.png) center center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+.imagen6 {
+    background: url(../img/imgproyecto/marca/behance%20marca%20personal-09.png) center center no-repeat fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 1s;
+}
+
+.imgconst {
+    width: 300px;
+    height: auto;
+}
+.general {
+    padding-bottom: 2em;
+    background-color: #eeeeee;   
+}
+.marbott {
+    padding-bottom: 2em;
+}
+.martop {
+    margin-top: 6em;
+}
+.martop2 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+.info{
+    margin-top: 2em;
+}
+.carac {
+    margin-right: 1em;
+    text-align: center;
+}
+h2 {
+    color: #97B0BC;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+    font-size: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+h6 {
+    color: #ffffff;
+}
+.nombre {
+    color: #404040;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+.nombresub {
+    color: #404040;
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+.categorias {
+    margin-bottom: 1em;
+}
+.dato {
+    color: #707070;
+}
+.ffoot {
+    background-color: #707070;
+}
+.foot {
+    background-color: #404040;
+}
+.copy {
+    color: #ffffff;
+}
+.re {
+    margin-top: 20px;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-section {
+    min-height: 100%;
+    position: relative;
+    padding: 5em 4em;
+}
+.cd-section:nth-of-type(odd) {
+    background-color: #404040;
+}
+.cd-section:nth-of-type(odd) p {
+    color: #000000;
+}
+.cd-section:nth-of-type(even) {
+    background-color: #eeeeee;
+}
+.cd-section:nth-of-type(even) p {
+    color: #404040;
+}
+.scrolld {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 768px;
+    text-align: center;
+}
+.cd-section h1 {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 1.25rem;
+    padding-bottom: 3em;
+}
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: -30px;
+    margin-top: -50px;
+}
+.logo2 {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+    z-index: 1000;
+    position: absolute;
+}
+.introinf h1 {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 3em;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+.row {
+    margin-left: 0;
+}
+.secttwo {
+    margin-top: 4em;
+    margin-left: 3em;
+}
+.skills h2 {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+.cd-section p {
+    line-height: 1.6;
+}
+p {
+    line-height: 1.6;
+}
+.about{
+    text-align: justify;
+}
+#section1 {
+    background: url(../img/fondointro.jpg) center center no-repeat fixed;
+}
+.two {
+    padding: 0;
+    margin: 0;
+}
+.me {
+    background: url(../img/about.JPG) center center no-repeat;
+    object-fit: cover;
+    float: right;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .cd-section h1 {
+        font-size: 30px;
+        font-size: 1.875rem;
+    }
+    .introinf h1 {
+        font-size: 20px;
+        font-size: 3rem;
+        padding-bottom: 3em;
+        letter-spacing: 5px;
+        line-height: 1.5em;
+    }
+    .skills h2 {
+        font-size: 20px;
+        font-size: 1rem;
+        padding-bottom: 2em;
+        letter-spacing: 5px;
+        line-height: 1.5em;
+        padding-top: 2em;
+    }
+    .cd-section p {
+        /*
+        font-size: 20px;
+        font-size: 1.25rem;
+        */
+        line-height: 2;
+    }
+    p {
+        line-height: 2;
+    }
+    .about {
+        text-align: justify;
+        font-size: 1rem;
+    }
+}
+/*
+.cd-scroll-down {
+position: absolute;
+left: 50%;
+right: auto;
+-webkit-transform: translateX(-50%);
+-moz-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+bottom: 20px;
+width: 38px;
+height: 44px;
+background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
+}*/
+
+/* No Touch devices */
+.cd-nav-trigger {
+    display: none;
+}
+
+.no-touch #cd-vertical-nav {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.no-touch #cd-vertical-nav li {
+    text-align: right;
+}
+.no-touch #cd-vertical-nav a {
+    display: inline-block;
+    /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.no-touch #cd-vertical-nav a:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+    float: right;
+    display: inline-block;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+    opacity: 1;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+    background-color: #ffffff;
+}
+.no-touch #cd-vertical-nav .cd-dot {
+    position: relative;
+    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+    top: 8px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #404040;
+    -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+    -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+    transition: transform 0.2s, background-color 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-label {
+    position: relative;
+    margin-right: 10px;
+    padding: .4em .5em;
+    color: white;
+    font-size: 14px;
+    font-size: 0.875rem;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+/* Touch devices */
+.touch .cd-nav-trigger {
+    display: block;
+    z-index: 2;
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+    height: 44px;
+    width: 44px;
+    border-radius: 0.25em;
+    background: rgba(255, 255, 255, 0.9);
+}
+.touch .cd-nav-trigger span {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: #3e3947;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.touch .cd-nav-trigger span::before {
+    top: -9px;
+}
+.touch .cd-nav-trigger span::after {
+    bottom: -9px;
+}
+
+.touch #cd-vertical-nav {
+    position: fixed;
+    z-index: 1;
+    right: 5%;
+    bottom: 30px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-radius: 0.25em;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.touch #cd-vertical-nav a {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid rgba(62, 57, 71, 0.1);
+}
+.touch #cd-vertical-nav a span:first-child {
+    display: none;
+}
+.touch #cd-vertical-nav a.is-selected span:last-child {
+    color: #d88683;
+}
+.touch #cd-vertical-nav.open {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger {
+    background-color: transparent;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span {
+    background-color: rgba(62, 57, 71, 0);
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+    background-color: #3e3947;
+    height: 3px;
+    width: 20px;
+    border-radius: 0;
+    left: -8px;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 1px;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    bottom: 0;
+}
+.touch #cd-vertical-nav li:last-child a {
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+        bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
